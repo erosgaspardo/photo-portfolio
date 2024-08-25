@@ -1,0 +1,267 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+::selection {
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  background-color: black;
+  color: white;
+}
+
+.swiper {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  animation: fadeIn 2s ease-in-out;
+  padding: 4em;
+}
+
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+} 
+
+.swiper-slide > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.swiper-button-next {
+  color: transparent;
+  width: 50%;
+  height: 80%;
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  transform: translateY(10%);
+  top: 3%;
+}
+
+.swiper-button-next:hover {
+  cursor: e-resize;
+}
+
+.swiper-button-prev:hover {
+  cursor: w-resize;
+}
+
+.swiper-button-prev {
+  color: transparent;
+  width: 50%;
+  height: 80%;
+  transform: translateY(10%);
+  display: flex;
+  justify-content: flex-start;
+  position: absolute;
+  top: 3%;
+}
+
+main {
+    height: 100vh;
+}
+
+header {
+  position: relative;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  z-index: 2;
+  padding: 0.5em 1em 0 1em;
+  overflow: hidden;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.about-header {
+  position: absolute;
+  top: .4em;
+  right: 1em;
+  z-index: 9;
+}
+
+footer {
+  position: sticky;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  z-index: 2;
+  padding: 0em 1em 1em 1em;
+  overflow: hidden;
+  animation: fadeIn 1s ease-in-out;
+}
+
+footer p {
+  font-size: 1em;
+}
+
+p {
+  font-family: "Helvetica Neue";
+  font-size: 1.25em;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.details p {
+    padding: 1em 20em 1em 1em;
+    font-size: 1em;
+/*     text-transform: none; */
+}
+
+
+.main-about {
+  padding: 0 1em 0 1em;
+  text-indent: 11em;
+  position: absolute;
+  top: .5em;
+  color: rgb(100, 100, 100);
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+} 
+
+ul {
+  font-family: "Helvetica Neue";
+  font-size: 1.25em;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: black;
+  text-indent: 0em;
+}
+
+ul li {
+  text-indent: 1.3em;
+  font-family: "Helvetica Neue";
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: rgb(100, 100, 100);
+  animation: fadeIn 1s ease-in-out;
+  list-style:none;
+}
+
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+#back:hover {
+  background-color: black;
+  color: white;
+}
+
+
+#contact {
+  text-indent: 0em;
+  color: black;
+}
+
+#contact-list a {
+  color: rgb(100, 100, 100);
+}
+
+#contact-list a:hover {
+  color: white;
+}
+
+.projects-list {
+  display: flex;
+  flex-direction: row;
+  margin-left: 2em;
+  text-indent: 0;
+  padding-right: 6em;
+  animation: fadeIn 1s ease-in;
+  margin: 0;
+}
+
+.projects-list p {
+  z-index: 99;
+  margin-left: 2em;
+}
+
+.projects-list a {
+  color: rgb(100, 100, 100);
+  padding-right: .2em;
+}
+.projects-list a:hover {
+  color: white;
+}
+
+#index:hover {
+  color: white !important;
+}
+
+#carousel-home {
+  padding: 3em;
+}
+
+#goback a {
+  color: rgb(100, 100, 100);
+  position: fixed;
+  bottom: 1em;
+}
+
+#goback a:hover {
+  color: white;
+}
+
+#copyright {
+  color: rgb(100, 100, 100);
+  position: fixed;
+  bottom: 1em;
+  right: 1em;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
+  .swiper {
+    height: 99dvh;
+  }
+
+  #carousel-home {
+    height: 100vh;
+  }
+
+  #homepage {
+    overflow: hidden;
+  }
+
+  .details p {
+    padding: 1em .5em .5em .5em;
+  }
+
+  #carousel-home {
+    padding: 2em;
+  }
+
+  .projects-list p {
+    margin-top: .3em;
+    margin-left: .3em;
+    font-size: 1em;
+  }
+
+  .projects-list {
+    padding-right: 0;
+  }
+}

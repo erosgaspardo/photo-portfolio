@@ -257,11 +257,24 @@ ul li {
 
   .projects-list p {
     margin-top: .3em;
-    margin-left: .3em;
+    margin-left: 1em;
     font-size: 1em;
   }
 
   .projects-list {
     padding-right: 0;
+  }
+
+  #goback a {
+    position: absolute;
+    bottom: 1em;
+    left: 1em;
+    text-indent: 0em;
+    width: max-content;
+  }
+
+  #copyright {
+    position: absolute;
+    bottom: 1em;
   }
 }

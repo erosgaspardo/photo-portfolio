@@ -188,11 +188,13 @@ ul li {
   padding-right: 6em;
   animation: fadeIn 1s ease-in;
   margin: 0;
+  margin-top: 4px;
 }
 
 .projects-list p {
   z-index: 99;
   margin-left: 2em;
+  font-size: 1em;
 }
 
 .projects-list a {
@@ -208,7 +210,7 @@ ul li {
 }
 
 #carousel-home {
-  padding: 3em;
+  padding: 6em;
 }
 
 #goback a {

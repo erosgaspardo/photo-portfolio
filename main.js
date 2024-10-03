@@ -2,6 +2,7 @@ function initSwiper() {
   new Swiper('.swiper', {
     loop: true,
     effect: 'fade',
+    speed: 800,
     autoplay: {
       delay: 3500,
       disableOnInteraction: true,

@@ -273,10 +273,16 @@ ul li {
     left: 1em;
     text-indent: 0em;
     width: max-content;
+    font-size: .8em;
   }
 
   #copyright {
     position: absolute;
     bottom: 1em;
+    font-size: 1em;
+  }
+
+  .contact-wrapper {
+    font-size: .8em;
   }
 }

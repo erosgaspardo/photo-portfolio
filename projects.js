@@ -1,6 +1,7 @@
     new Swiper('.swiper', {
       loop: true,
       effect: 'fade',
+      speed: 900,
       autoplay: true,
       autoplay: {
         delay: 3000,
